@@ -18,6 +18,15 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/sucesso', function () {
+    return view('User\sucesso');
+});
+Route::get('/fail', function () {
+    return view('User\fail');
+});
+
+
+
 
 Route::get('/auth',function(){
     return view('User.auth');

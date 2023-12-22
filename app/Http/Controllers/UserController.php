@@ -26,12 +26,12 @@ class UserController extends Controller
             'email' => ['required','email'],
             'password' => ['required']
         ])->validate();
-
+            
         if(auth()->attempt(request()->only(['email','password']))){
-            return redirect('/User/sucesso');
+            return redirect('/sucesso');
         }
         else{
-            return redirect('/User/fail');
+            return redirect('/fail');
         }
     }
 
