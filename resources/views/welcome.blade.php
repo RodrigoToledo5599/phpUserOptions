@@ -33,7 +33,8 @@
 <body>
     <div class="options">
         <a href="{{ url('/createAcc') }}">Criar Conta</a><br><br><br>
-        <a href="{{ url('/auth') }}">Logar Conta</a>
+        <a href="{{ url('/auth') }}">Logar Conta</a><br><br><br>
+        <a href="{{ url('/getAllTasks') }}">Ver Tasks</a>
     </div>
     </body>
 

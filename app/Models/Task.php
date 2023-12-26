@@ -8,20 +8,18 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class Task extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
     public $title;
     public $description;
     public $user_id;
-
-    protected $fillable = [];
+    
 
     
     protected $hidden = [
-        'id',
-        'remember_token',
+        'id'
     ];
 
     
