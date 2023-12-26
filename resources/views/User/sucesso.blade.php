@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>Sucesso</h1>
+    <p>{{Auth::check()}}</p>
+    <p>{{Auth::id}}</p>
 </body>
 </html>

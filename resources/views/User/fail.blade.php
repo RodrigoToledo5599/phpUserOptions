@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Fail</h1>
+    <p>{{Auth::check()}}</p>
 </body>
 </html>

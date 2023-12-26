@@ -18,12 +18,14 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/sucesso', function () {
     return view('User\sucesso');
-});
+})->middleware('auth');
+
 Route::get('/fail', function () {
     return view('User\fail');
-});
+})->middleware('auth');
 
 
 
