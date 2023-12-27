@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
 use App\Models\User;
 use App\Http\Controllers\DB;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,8 +37,6 @@ Route::get('/auth',function(){
     return view('User.auth');
 });
 Route::post('/authenticate',[UserController::class, 'authenticate']);
-
-
 
 
 
