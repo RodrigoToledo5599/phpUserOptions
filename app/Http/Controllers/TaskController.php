@@ -33,9 +33,12 @@ class TaskController extends Controller
     }
 
 
-    public function returnTask(Request $request)
+    public function returnTaskFromPerson()
     {
-        // still in work
+        $person = auth()->user();
+        //$tasks = \DB::table('tasks')->where('user_id',$person->user_id)->get();
+        return $person;
+
     }
 
 }
